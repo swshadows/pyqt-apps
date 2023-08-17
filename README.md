@@ -1,6 +1,6 @@
-# Py-Calc
+# PyQt Apps
 
-> ➗ Uma calculadora simples feita em Python, usando PyQT5
+> 🧁 Aplicativos desktop desenvolvidos em Python, usando PyQT5
 
 ## Inicialização
 
@@ -15,12 +15,15 @@
 - Use os comandos para clonar o repositório
 
 ```bash
-  git clone https://github.com/swshadows/py-calc.git
-  cd py-calc
+  git clone https://github.com/swshadows/pyqt-apps.git
+  cd pyqt-apps
 ```
 
 - Crie o ambiente virtual do Python com o comando `python -m venv venv`
 - Ative o `venv` com o comando `venv\Scripts\activate`
 - Instale as dependências com `pip install -r requirements.txt`
-- Rode o programa com `python main.py`
+- Rode o programa com `python main.py <args>`
+  - Substitua `<args>` por uma das opções abaixo para rodar aplicativos diferentes:
+    - `calc`: Uma calculadora simples que usa a função `eval()` para realizar operações
+    - `img`: Um redimensionador de imagens, construido com QTDesigner
 - Para sair do ambiente, use o comando `deactivate`

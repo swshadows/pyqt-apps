@@ -1,4 +1,3 @@
-import time
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QMainWindow, QWidget, QGridLayout, QPushButton, QLineEdit, QSizePolicy
 
@@ -21,7 +20,9 @@ class Calculadora(QMainWindow):
         self.add_button(QPushButton("8"), 1, 1, 1, 1)
         self.add_button(QPushButton("9"), 1, 2, 1, 1)
         self.add_button(QPushButton("+"), 1, 3, 1, 1)
-        self.add_button(QPushButton("💜"), 1, 4, 1, 1, lambda: self._display.setText("Feito por @swshadows, obrigado por testar 💜"))
+        self.add_button(
+            QPushButton("💜"), 1, 4, 1, 1, lambda: self._display.setText("Feito por @swshadows, obrigado por testar 💜")
+        )
 
         self.add_button(QPushButton("4"), 2, 0, 1, 1)
         self.add_button(QPushButton("5"), 2, 1, 1, 1)
@@ -78,5 +79,5 @@ class Calculadora(QMainWindow):
     def eval_equal(self):
         try:
             self._display.setText(str(eval(self._display.text())))
-        except Exception as e:
+        except Exception:
             self._display.setText("Conta inválida")
